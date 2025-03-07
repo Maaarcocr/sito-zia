@@ -13,12 +13,15 @@
     flex-direction: column;
     height: 0;
     right: 0;
-    overflow-y: auto;
+    left: 0;
+    overflow-y: hidden;
     position: absolute;
-    top: calc(var(--spacing-medium) + 30px);
+    top: calc(var(--spacing-medium) + 40px);
     transition: height .3s ease-in-out;
     min-width: 100%;
     z-index: 1;
+    display: flex;
+    visibility: hidden;
 }
 
 .mobile-menu-inner {
@@ -27,6 +30,9 @@
 
 .menu-open .nav-menu {
     height: auto;
+    overflow-y: auto;
+    visibility: visible;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .menu-open .menu-icon-top {
@@ -51,5 +57,8 @@
         position: static;
         min-width: unset;
         height: auto;
+        visibility: visible;
+        overflow-y: visible;
+        box-shadow: none;
     }
 }

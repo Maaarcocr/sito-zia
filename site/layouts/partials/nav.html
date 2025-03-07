@@ -1,5 +1,5 @@
-<nav data-nav class="fixed w-100 z-999 bg-white bb b--light-gray">
-	<div class="flex justify-between items-center mw8 center">
+<nav data-nav class="fixed w-100 z-999 bg-white b--light-gray">
+	<div class="flex justify-between items-center mw8 center ph3">
 		<!-- Logo -->
 		<a href="/" class="flex items-center no-underline">
 			<img src="/img/logo.svg" alt="Case Vacanza logo" class="w3 h3 mr2"/>
@@ -15,10 +15,10 @@
 			</svg>
 		</div>
 
-		<ul class="flex-l dn nav-menu list ma0 pa0">
-			<li class="mh3-l"><a href="/" class="no-underline f5 {{ if .IsHome }}primary b{{ else }}dark-gray{{ end }} pv2 ph2 db hover-primary transition-colors">Home</a></li>
-			<li class="mh3-l"><a href="/properties" class="no-underline f5 {{ if eq .RelPermalink "/properties/" }}primary b{{ else }}dark-gray{{ end }} pv2 ph2 db hover-primary transition-colors">Proprietà</a></li>
-			<li class="mh3-l"><a href="/contact" class="no-underline f5 {{ if eq .RelPermalink "/contact/" }}primary b{{ else }}dark-gray{{ end }} pv2 ph2 db hover-primary transition-colors">Contatti</a></li>
+		<ul class="nav-menu list ma0 pa0">
+			<li class="w-100 mh3-l"><a href="/" class="no-underline f5 {{ if .IsHome }}primary b{{ else }}dark-gray{{ end }} pv3 ph3 db hover-primary transition-colors">Home</a></li>
+			<li class="w-100 mh3-l"><a href="/properties" class="no-underline f5 {{ if eq .RelPermalink "/properties/" }}primary b{{ else }}dark-gray{{ end }} pv3 ph3 db hover-primary transition-colors">Proprietà</a></li>
+			<li class="w-100 mh3-l"><a href="/contact" class="no-underline f5 {{ if eq .RelPermalink "/contact/" }}primary b{{ else }}dark-gray{{ end }} pv3 ph3 db hover-primary transition-colors">Contatti</a></li>
 		</ul>
 	</div>
 </nav>
