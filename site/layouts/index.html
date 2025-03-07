@@ -2,12 +2,48 @@
 
 {{ partial "jumbotron" (dict "imageUrl" .Params.image "title" .Title "subtitle" .Params.subtitle) }}
 
-{{ partial "short-text" .Params.blurb}}
+<section class="bg-off-white pv5">
+  <div class="ph3 mw7 center">
+    <div class="measure-wide center tc">
+      <h2 class="f2 b lh-title mb4">{{ .Params.intro.heading }}</h2>
+      <p class="mb4">{{ .Params.intro.text }}</p>
+      <div class="tc">
+        <a href="/properties" class="btn btn-lg raise">View All Properties</a>
+      </div>
+    </div>
+  </div>
+</section>
 
-{{ partial "2-up" .Params }}
-
-{{ partial "text-and-image" (dict "heading" .Params.values.heading "text" .Params.values.text "buttonText" "Read more" "buttonLink" "/values") }}
-
-{{ partial "blog" . }}
+<section class="bg-grey-1 pv5">
+  <div class="ph3 mw8 center">
+    <h2 class="f2 b lh-title mb4 tc">Featured Properties</h2>
+    <div class="flex-ns flex-wrap mhn2-ns">
+      {{ $featuredProperties := where (where .Site.RegularPages "Section" "property") ".Params.featured" true }}
+        {{ range first 4 $featuredProperties }}
+        <div class="ph2-ns w-50-ns mb4">
+          <div class="property-card">
+            <div class="property-card__image">
+              <img src="{{ .Params.image }}" alt="{{ .Title }}">
+            </div>
+            <div class="property-card__content">
+              <h3 class="property-card__title">{{ .Title }}</h3>
+              <p class="property-card__location">{{ .Params.location }}</p>
+              <p class="property-card__price">{{ .Params.price }}</p>
+              <div class="property-card__features">
+                <span class="property-card__feature">{{ .Params.bedrooms }} bedrooms</span>
+                <span class="property-card__feature">{{ .Params.bathrooms }} bathrooms</span>
+                <span class="property-card__feature">{{ .Params.max_guests }} guests</span>
+              </div>
+              <p class="property-card__description">{{ .Params.description }}</p>
+              <div class="property-card__footer">
+                <a href="{{ .RelPermalink }}" class="btn btn-block raise">View Details</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        {{ end }}
+    </div>
+  </div>
+</section>
 
 {{ end }}

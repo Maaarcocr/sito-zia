@@ -1,19 +1,31 @@
 ---
-title: "Contact"
-logo: "/img/logo.svg"
+title: Contatti
+logo: /img/logo.svg
 contact_entries:
-  - heading: Location
-    text: "3153 Lynn Avenue, South San Francisco, California 94080"
-  - heading: Working hours
-    text: "Monday – Saturday: 9AM – 7PM We’re closed on Sundays"
+  - heading: Telefono
+    text: "+1 234 567 8900"
+  - heading: Email
+    text: "prenotazioni@tuodominio.com"
+  - heading: Orari di Lavoro
+    text: "Lunedì – Domenica: 9:00 – 19:00"
 ---
 
-We’d love to get in touch with you and hear your ideas and
-questions. We strive to grow and improve constantly and your feedback
-is valuable for us.
+# Mettiti in Contatto
 
-<h3 class="f4 b lh-title mb2">How can I get…?</h3>
+Siamo qui per aiutarti a trovare la tua casa vacanza perfetta. Se hai domande sulle nostre proprietà, vuoi effettuare una prenotazione o hai bisogno di assistenza durante il tuo soggiorno, non esitare a contattarci.
 
-You can also use the form below for any inquiries about coffee
-availability, monthly subscriptions and scheduling a 1-on-1 session
-with our baristas. Don’t be shy, drop us a line!
+## Processo di Prenotazione
+
+* Sfoglia le nostre proprietà e seleziona l'alloggio preferito
+* Contattaci via telefono o email con le tue date e la proprietà preferita
+* Verificheremo la disponibilità e ti forniremo i prezzi dettagliati
+* Una volta confermato, ti guideremo attraverso il processo di prenotazione
+* Ricevi la conferma della prenotazione e i dettagli del check-in
+
+## Informazioni Aggiuntive
+
+* Tutte le proprietà vengono pulite professionalmente tra un soggiorno e l'altro
+* Check-in: 15:00
+* Check-out: 11:00
+* È possibile organizzare check-in anticipati o check-out posticipati
+* Siamo felici di organizzare servizi aggiuntivi (transfer aeroportuali, pulizie, ecc.)

@@ -1,7 +1,7 @@
 baseurl = "/"
-languageCode = "en-us"
-languageLang = "en"
-title = "Kaldi"
+languageCode = "it-it"
+languageLang = "it"
+title = "Case Vacanza"
 
 # RSS, categories and tags disabled for an easy start
 # See configuration options for more details: 
